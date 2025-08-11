@@ -28,14 +28,25 @@ export default function Contact() {
     setIsSubmitting(true);
 
     try {
-      await apiRequest("POST", "/api/contact", formData);
-      
-      toast({
-        title: "Message Sent!",
-        description: "Thank you for reaching out. I'll get back to you soon.",
+      const response = await fetch('./contact.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       });
 
-      setFormData({ name: "", email: "", subject: "", message: "" });
+      const data = await response.json();
+
+      if (response.ok && data.success) {
+        toast({
+          title: "Message Sent!",
+          description: "Thank you for reaching out. I'll get back to you soon.",
+        });
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      } else {
+        throw new Error(data.error || 'Failed to send message');
+      }
     } catch (error) {
       toast({
         title: "Error",

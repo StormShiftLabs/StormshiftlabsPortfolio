@@ -4,7 +4,7 @@ import { Code, Globe, Smartphone, Database, Palette, Cloud } from "lucide-react"
 const services = [
   {
     id: "ios-development",
-    title: "iOS App Development",
+    title: "App Development",
     description: "Native iOS applications built with Swift and SwiftUI using MVVM architecture patterns for scalable, maintainable code.",
     icon: Smartphone,
     tech: ["Swift", "SwiftUI", "MVVM"],
