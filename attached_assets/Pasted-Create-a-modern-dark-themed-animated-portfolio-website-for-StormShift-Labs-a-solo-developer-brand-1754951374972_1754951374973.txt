@@ -1,0 +1,26 @@
+Create a modern, dark-themed, animated portfolio website for StormShift Labs, a solo developer brand. Use a futuristic, tech-inspired design with smooth scroll animations, micro-interactions, and a clean, intuitive layout.
+Aesthetic: Dark navy or black background, neon cyan & electric purple gradients, glowing hover states, parallax backgrounds. Use a bold futuristic font (like Orbitron or Space Grotesk) for headings, and a clean sans-serif (like Inter or Manrope) for body text.
+
+About Story:
+“StormShift Labs is the work of Justin Madanayake, a self-taught developer blending creativity and technology. My journey began building my first client website — Top Speed Cincy — on WordPress. I then dove into iOS development through Sean Allen’s YouTube course, creating an Appetizer Ordering app with advanced ordering, cart, and account features. That experience set the stage for my first real self-built app, Habitn — an ADHD-focused habit tracker built with Swift, MVVM, and Firebase. From there, I explored React with Mind Match, a web-based matching game, and expanded into mobile-first AI solutions with Picky Chef, a React Native app for meal planning. Every project represents a step forward — learning, experimenting, and refining my craft.”
+
+Sections to include:
+
+Hero Section: Large “StormShift Labs” heading with animated glitch effect, tagline “Innovating at the intersection of code and creativity”, and subtle animated background (particles or wireframe sphere). Scroll indicator arrow at bottom.
+About Section: Split layout with About Story text on one side, abstract tech illustration or animated SVG pattern on the other. Include a horizontal skill icon row for Swift, SwiftUI, React, React Native, WordPress, Firebase.
+Portfolio Section: Grid or animated cards with hover tilt/glow effects. Include:
+Top Speed Cincy Website (WordPress, client project) — screenshot + live link.
+Sean Allen Swift Training (learning milestone) — placeholder image.
+Appetizer Ordering App (SwiftUI, MVVM, course project) — screenshots + “Learning Project” badge.
+Habitn App (Swift, Firebase, ADHD-focused habit tracker) — placeholder.
+Mind Match (React) — placeholder.
+Picky Chef (React Native) — placeholder.
+Each card should open a modal or separate page with project description, tech stack, and “Coming Soon” tag if unfinished.
+Timeline Section: Horizontal or vertical timeline with scroll-trigger animations showing project milestones in order: Top Speed Cincy → Sean Allen course → Appetizer Ordering App → Habitn → Mind Match → Picky Chef.
+Contact Section: Bold headline “Let’s Build Something” with contact form, email link, and social icons.
+Animations & Interactivity:
+Smooth fade/slide-in reveals on scroll.
+Hover tilt effects on project cards.
+Floating nav bar that highlights active section.
+Optional dark/light mode toggle.
+Deploy ready for custom domain stormshiftlabs.com.
