@@ -4,7 +4,15 @@
 
 This is a modern, dark-themed portfolio website for StormShift Labs, the developer brand of Justin Madanayake. The site showcases a collection of projects ranging from client websites to iOS apps and React applications, built with a futuristic design featuring smooth animations, scroll-triggered effects, and a comprehensive contact system.
 
-The application is a full-stack solution with a React frontend and Express backend, designed to present technical projects and career milestones in an engaging, interactive format. The site includes sections for hero introduction, about story, project portfolio, timeline visualization, and contact functionality with email integration.
+The application is a full-stack solution with a React frontend and Express backend, designed to present technical projects and career milestones in an engaging, interactive format. The site includes sections for hero introduction, about story, services showcase, project portfolio, timeline visualization, and contact functionality with email integration.
+
+**Recent Updates (August 2025):**
+- Added Services section showcasing iOS development, web development, UI/UX design, and Firebase integration
+- Enhanced mobile responsiveness across all sections, especially timeline and hero areas
+- Implemented proper skill icons using Lucide React components with gradient backgrounds
+- Updated project descriptions with detailed explanations of learning outcomes and technical implementations
+- Improved SEO with better title and meta description
+- Fixed nodemailer configuration for contact form functionality
 
 ## User Preferences
 

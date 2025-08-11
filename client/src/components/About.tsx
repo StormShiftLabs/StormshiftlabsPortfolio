@@ -1,12 +1,13 @@
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
+import { Code, Smartphone, Globe, Database, Layers, Cpu } from "lucide-react";
 
 const skills = [
-  { name: "Swift", icon: "fab fa-swift" },
-  { name: "React", icon: "fab fa-react" },
-  { name: "React Native", icon: "fab fa-react" },
-  { name: "WordPress", icon: "fab fa-wordpress" },
-  { name: "Firebase", icon: "fas fa-database" },
-  { name: "SwiftUI", icon: "fas fa-mobile-alt" },
+  { name: "Swift", icon: Code, color: "from-orange-500 to-red-500" },
+  { name: "React", icon: Layers, color: "from-blue-500 to-cyan-500" },
+  { name: "React Native", icon: Smartphone, color: "from-blue-500 to-purple-500" },
+  { name: "WordPress", icon: Globe, color: "from-blue-600 to-blue-800" },
+  { name: "Firebase", icon: Database, color: "from-yellow-500 to-orange-500" },
+  { name: "SwiftUI", icon: Cpu, color: "from-purple-500 to-pink-500" },
 ];
 
 export default function About() {
@@ -44,25 +45,31 @@ export default function About() {
           {/* Tech Skills */}
           <div className="relative">
             <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700" data-testid="skills-container">
-              <div className="grid grid-cols-3 gap-8 mb-8">
-                {skills.slice(0, 3).map((skill, index) => (
-                  <div key={skill.name} className="text-center group" data-testid={`skill-${skill.name.toLowerCase().replace(' ', '-')}`}>
-                    <div className="w-16 h-16 mx-auto mb-3 bg-gradient-to-br from-neon-cyan to-neon-purple p-3 rounded-xl group-hover:scale-110 transition-transform duration-300">
-                      <i className={`${skill.icon} text-2xl text-white`}></i>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-8 mb-8">
+                {skills.slice(0, 3).map((skill, index) => {
+                  const IconComponent = skill.icon;
+                  return (
+                    <div key={skill.name} className="text-center group" data-testid={`skill-${skill.name.toLowerCase().replace(' ', '-')}`}>
+                      <div className={`w-14 h-14 sm:w-16 sm:h-16 mx-auto mb-3 bg-gradient-to-br ${skill.color} p-3 rounded-xl group-hover:scale-110 transition-transform duration-300 flex items-center justify-center`}>
+                        <IconComponent className="text-white" size={24} />
+                      </div>
+                      <span className="text-xs sm:text-sm text-gray-400">{skill.name}</span>
                     </div>
-                    <span className="text-sm text-gray-400">{skill.name}</span>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
-              <div className="grid grid-cols-3 gap-8">
-                {skills.slice(3).map((skill, index) => (
-                  <div key={skill.name} className="text-center group" data-testid={`skill-${skill.name.toLowerCase().replace(' ', '-')}`}>
-                    <div className="w-16 h-16 mx-auto mb-3 bg-gradient-to-br from-neon-cyan to-neon-purple p-3 rounded-xl group-hover:scale-110 transition-transform duration-300">
-                      <i className={`${skill.icon} text-2xl text-white`}></i>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-8">
+                {skills.slice(3).map((skill, index) => {
+                  const IconComponent = skill.icon;
+                  return (
+                    <div key={skill.name} className="text-center group" data-testid={`skill-${skill.name.toLowerCase().replace(' ', '-')}`}>
+                      <div className={`w-14 h-14 sm:w-16 sm:h-16 mx-auto mb-3 bg-gradient-to-br ${skill.color} p-3 rounded-xl group-hover:scale-110 transition-transform duration-300 flex items-center justify-center`}>
+                        <IconComponent className="text-white" size={24} />
+                      </div>
+                      <span className="text-xs sm:text-sm text-gray-400">{skill.name}</span>
                     </div>
-                    <span className="text-sm text-gray-400">{skill.name}</span>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             </div>
           </div>

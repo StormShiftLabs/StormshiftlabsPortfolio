@@ -50,10 +50,10 @@ export default function Contact() {
   return (
     <section id="contact" className="py-20 px-4 bg-gradient-to-t from-gray-900/50 to-transparent">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="font-orbitron font-bold text-5xl md:text-6xl mb-8" data-testid="contact-title">
+        <h2 className="font-orbitron font-bold text-3xl sm:text-5xl md:text-6xl mb-6 sm:mb-8" data-testid="contact-title">
           Let's Build <span className="text-neon-cyan">Something</span>
         </h2>
-        <p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto" data-testid="contact-subtitle">
+        <p className="text-lg sm:text-xl text-gray-300 mb-8 sm:mb-12 max-w-2xl mx-auto" data-testid="contact-subtitle">
           Ready to bring your ideas to life? Whether it's a sleek mobile app or a cutting-edge web experience, 
           let's collaborate and create something extraordinary.
         </p>

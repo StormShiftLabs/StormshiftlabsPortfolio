@@ -86,54 +86,80 @@ export default function Timeline() {
         </h2>
         
         <div ref={ref} className={`relative ${isVisible ? "fade-in-up" : "opacity-0"}`}>
-          {/* Timeline Line */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-neon-cyan to-neon-purple opacity-50"></div>
+          {/* Timeline Line - Hidden on mobile, shown on larger screens */}
+          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-neon-cyan to-neon-purple opacity-50"></div>
+          
+          {/* Mobile Timeline Line */}
+          <div className="md:hidden absolute left-6 top-0 h-full w-1 bg-gradient-to-b from-neon-cyan to-neon-purple opacity-50"></div>
           
           {/* Timeline Items */}
-          <div className="space-y-16" data-testid="timeline-items">
+          <div className="space-y-8 md:space-y-16" data-testid="timeline-items">
             {timelineItems.map((item, index) => (
-              <div key={item.id} className="flex items-center justify-between" data-testid={`timeline-item-${item.id}`}>
-                {item.side === "left" ? (
-                  <>
-                    <div className="w-5/12 text-right pr-8">
-                      <div className="bg-gradient-to-r from-gray-900 to-gray-800 p-6 rounded-xl border border-gray-700">
-                        <h3 className={`font-bold text-xl mb-2 ${item.color === "cyan" ? "text-neon-cyan" : "text-neon-purple"}`}>
-                          {item.title}
-                        </h3>
-                        <p className="text-gray-400 text-sm mb-3">{item.description}</p>
-                        <span className={`text-xs font-semibold ${getStatusColor(item.status)}`}>
-                          {item.status}
-                        </span>
+              <div key={item.id} className="relative" data-testid={`timeline-item-${item.id}`}>
+                {/* Mobile Layout */}
+                <div className="md:hidden flex items-start">
+                  <div className="relative z-10 mr-6">
+                    <div className={`w-6 h-6 rounded-full border-4 border-gray-900 ${
+                      item.color === "cyan" ? "bg-neon-cyan" : "bg-neon-purple"
+                    }`}></div>
+                  </div>
+                  <div className="flex-1">
+                    <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-4 rounded-xl border border-gray-700">
+                      <h3 className={`font-bold text-lg mb-2 ${item.color === "cyan" ? "text-neon-cyan" : "text-neon-purple"}`}>
+                        {item.title}
+                      </h3>
+                      <p className="text-gray-400 text-sm mb-3">{item.description}</p>
+                      <span className={`text-xs font-semibold ${getStatusColor(item.status)}`}>
+                        {item.status}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Desktop Layout */}
+                <div className="hidden md:flex items-center justify-between">
+                  {item.side === "left" ? (
+                    <>
+                      <div className="w-5/12 text-right pr-8">
+                        <div className="bg-gradient-to-r from-gray-900 to-gray-800 p-6 rounded-xl border border-gray-700">
+                          <h3 className={`font-bold text-xl mb-2 ${item.color === "cyan" ? "text-neon-cyan" : "text-neon-purple"}`}>
+                            {item.title}
+                          </h3>
+                          <p className="text-gray-400 text-sm mb-3">{item.description}</p>
+                          <span className={`text-xs font-semibold ${getStatusColor(item.status)}`}>
+                            {item.status}
+                          </span>
+                        </div>
                       </div>
-                    </div>
-                    <div className="relative z-10">
-                      <div className={`w-6 h-6 rounded-full border-4 border-gray-900 ${
-                        item.color === "cyan" ? "bg-neon-cyan" : "bg-neon-purple"
-                      }`}></div>
-                    </div>
-                    <div className="w-5/12 pl-8"></div>
-                  </>
-                ) : (
-                  <>
-                    <div className="w-5/12 text-right pr-8"></div>
-                    <div className="relative z-10">
-                      <div className={`w-6 h-6 rounded-full border-4 border-gray-900 ${
-                        item.color === "cyan" ? "bg-neon-cyan" : "bg-neon-purple"
-                      }`}></div>
-                    </div>
-                    <div className="w-5/12 pl-8">
-                      <div className="bg-gradient-to-l from-gray-900 to-gray-800 p-6 rounded-xl border border-gray-700">
-                        <h3 className={`font-bold text-xl mb-2 ${item.color === "cyan" ? "text-neon-cyan" : "text-neon-purple"}`}>
-                          {item.title}
-                        </h3>
-                        <p className="text-gray-400 text-sm mb-3">{item.description}</p>
-                        <span className={`text-xs font-semibold ${getStatusColor(item.status)}`}>
-                          {item.status}
-                        </span>
+                      <div className="relative z-10">
+                        <div className={`w-6 h-6 rounded-full border-4 border-gray-900 ${
+                          item.color === "cyan" ? "bg-neon-cyan" : "bg-neon-purple"
+                        }`}></div>
                       </div>
-                    </div>
-                  </>
-                )}
+                      <div className="w-5/12 pl-8"></div>
+                    </>
+                  ) : (
+                    <>
+                      <div className="w-5/12 text-right pr-8"></div>
+                      <div className="relative z-10">
+                        <div className={`w-6 h-6 rounded-full border-4 border-gray-900 ${
+                          item.color === "cyan" ? "bg-neon-cyan" : "bg-neon-purple"
+                        }`}></div>
+                      </div>
+                      <div className="w-5/12 pl-8">
+                        <div className="bg-gradient-to-l from-gray-900 to-gray-800 p-6 rounded-xl border border-gray-700">
+                          <h3 className={`font-bold text-xl mb-2 ${item.color === "cyan" ? "text-neon-cyan" : "text-neon-purple"}`}>
+                            {item.title}
+                          </h3>
+                          <p className="text-gray-400 text-sm mb-3">{item.description}</p>
+                          <span className={`text-xs font-semibold ${getStatusColor(item.status)}`}>
+                            {item.status}
+                          </span>
+                        </div>
+                      </div>
+                    </>
+                  )}
+                </div>
               </div>
             ))}
           </div>

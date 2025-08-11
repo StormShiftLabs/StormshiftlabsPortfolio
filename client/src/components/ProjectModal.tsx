@@ -13,7 +13,7 @@ interface ProjectData {
 const projectData: Record<string, ProjectData> = {
   "top-speed-cincy": {
     title: "Top Speed Cincy",
-    description: "A professional WordPress website for an automotive services company featuring custom themes, responsive design, and SEO optimization.",
+    description: "Designed and built a professional website for a performance auto shop to showcase services, recent projects, and contact information. Used WordPress for rapid development with custom styling and structured content layout. Helped establish a stronger online presence and build customer trust for the business.",
     tech: ["WordPress", "PHP", "CSS3", "JavaScript"],
     status: "Live Project",
     link: "https://topspeedcincy.com",
@@ -21,38 +21,38 @@ const projectData: Record<string, ProjectData> = {
   },
   "sean-allen-training": {
     title: "Sean Allen Swift Training",
-    description: "Completed comprehensive iOS development course covering Swift fundamentals, SwiftUI, networking, and app architecture patterns.",
+    description: "Completed a structured iOS development curriculum via Sean Allen's tutorials. Learned fundamentals of Swift, SwiftUI, MVVM architecture, API calls, and state management. Gained hands-on experience by coding along and customizing features to deepen understanding.",
     tech: ["Swift", "SwiftUI", "iOS"],
     status: "Completed",
     features: ["Swift Fundamentals", "SwiftUI Framework", "MVVM Architecture", "API Integration"]
   },
   "appetizer-app": {
     title: "Appetizer Ordering App",
-    description: "A full-featured food ordering application built with SwiftUI implementing modern iOS development patterns and user experience design.",
-    tech: ["Swift", "SwiftUI", "MVVM"],
+    description: "Built an iOS app to browse, customize, and order appetizers, with a complete cart and checkout flow. Implemented SwiftUI with MVVM architecture, handling state management and data flow between views. Integrated networking to fetch menu items dynamically, reinforcing API consumption and JSON parsing skills. Developed form validation, user onboarding, and order confirmation screens for a realistic restaurant ordering experience.",
+    tech: ["Swift", "SwiftUI", "MVVM", "Networking"],
     status: "Completed",
-    features: ["Shopping Cart", "User Accounts", "Order Management", "Modern UI/UX"]
+    features: ["Shopping Cart", "User Accounts", "Order Management", "Modern UI/UX", "Form Validation", "API Integration"]
   },
   "habitn-app": {
     title: "Habitn - ADHD Habit Tracker",
-    description: "An innovative habit tracking application specifically designed for individuals with ADHD, featuring intelligent reminders and progress visualization.",
-    tech: ["Swift", "Firebase", "SwiftUI"],
+    description: "Developed an ADHD-friendly habit tracker with streaks, daily resets, and customizable notifications. Integrated Firebase for authentication, real-time habit storage, and cloud sync. Learned push notification scheduling, data modeling, and dynamic UI updates for a scalable app.",
+    tech: ["Swift", "Firebase", "SwiftUI", "MVVM"],
     status: "In Development",
-    features: ["ADHD-Focused Design", "Smart Notifications", "Progress Analytics", "Cloud Sync"]
+    features: ["ADHD-Focused Design", "Smart Notifications", "Progress Analytics", "Cloud Sync", "Real-time Updates", "Push Notifications"]
   },
   "mind-match": {
     title: "Mind Match",
-    description: "An interactive memory matching game built with React, featuring beautiful animations, difficulty levels, and score tracking.",
+    description: "Built an interactive matching game using React for web browsers. Practiced component-based architecture, state management, and game logic. Gained experience in responsive layout and smooth animations for better UX.",
     tech: ["React", "JavaScript", "CSS3"],
     status: "Coming Soon",
-    features: ["Multiple Difficulty Levels", "Score Tracking", "Smooth Animations", "Responsive Design"]
+    features: ["Multiple Difficulty Levels", "Score Tracking", "Smooth Animations", "Responsive Design", "Component Architecture"]
   },
   "picky-chef": {
     title: "Picky Chef",
-    description: "A React Native mobile application designed to help picky eaters discover new recipes based on their preferences and dietary restrictions.",
-    tech: ["React Native", "JavaScript", "API Integration"],
+    description: "Designed a mobile-first AI-powered meal planning app for busy families and picky eaters. Built with React Native for cross-platform compatibility and integrated AI-driven recipe suggestions. Learned mobile navigation patterns, form handling, and managing asynchronous data.",
+    tech: ["React Native", "JavaScript", "AI Integration"],
     status: "Coming Soon",
-    features: ["Recipe Discovery", "Dietary Filters", "Favorites System", "Cross-Platform"]
+    features: ["Recipe Discovery", "Dietary Filters", "Favorites System", "Cross-Platform", "AI-Powered Suggestions", "Mobile Navigation"]
   }
 };
 

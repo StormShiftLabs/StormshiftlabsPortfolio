@@ -20,15 +20,15 @@ export default function Hero() {
       </div>
       
       <div ref={ref} className={`text-center z-10 px-4 ${isVisible ? "fade-in-up" : "opacity-0"}`}>
-        <h1 className="font-orbitron font-black text-6xl md:text-8xl lg:text-9xl mb-6 glitch-text" data-testid="hero-title">
+        <h1 className="font-orbitron font-black text-4xl sm:text-6xl md:text-8xl lg:text-9xl mb-6 glitch-text" data-testid="hero-title">
           StormShift Labs
         </h1>
-        <p className="text-xl md:text-2xl lg:text-3xl mb-12 text-gray-300 max-w-4xl mx-auto font-light" data-testid="hero-subtitle">
+        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-8 sm:mb-12 text-gray-300 max-w-4xl mx-auto font-light" data-testid="hero-subtitle">
           Innovating at the intersection of <span className="text-neon-cyan">code</span> and <span className="text-neon-purple">creativity</span>
         </p>
         <button 
           onClick={scrollToAbout}
-          className="px-8 py-4 bg-gradient-to-r from-neon-cyan to-neon-purple text-black font-semibold rounded-lg hover:shadow-2xl hover:shadow-neon-cyan/50 transition-all duration-300 transform hover:-translate-y-1 glow-hover"
+          className="px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-neon-cyan to-neon-purple text-black font-semibold rounded-lg hover:shadow-2xl hover:shadow-neon-cyan/50 transition-all duration-300 transform hover:-translate-y-1 glow-hover"
           data-testid="hero-cta-button"
         >
           Explore My Work

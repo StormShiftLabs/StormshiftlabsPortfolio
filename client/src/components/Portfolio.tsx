@@ -15,7 +15,7 @@ const projects: ProjectCard[] = [
   {
     id: "top-speed-cincy",
     title: "Top Speed Cincy",
-    description: "Client website for automotive services built with WordPress and custom themes.",
+    description: "Designed and built a professional website for a performance auto shop to showcase services, recent projects, and contact information. Used WordPress for rapid development with custom styling and structured content layout.",
     image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=400&fit=crop",
     tags: ["WordPress", "Client Project"],
     status: "live",
@@ -24,7 +24,7 @@ const projects: ProjectCard[] = [
   {
     id: "sean-allen-training",
     title: "Sean Allen Swift Training",
-    description: "Comprehensive iOS development course covering Swift fundamentals and SwiftUI.",
+    description: "Completed a structured iOS development curriculum via Sean Allen's tutorials. Learned fundamentals of Swift, SwiftUI, MVVM architecture, API calls, and state management.",
     image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=400&fit=crop",
     tags: ["Swift", "Learning"],
     status: "completed"
@@ -32,7 +32,7 @@ const projects: ProjectCard[] = [
   {
     id: "appetizer-app",
     title: "Appetizer Ordering App",
-    description: "Full-featured ordering app with cart, accounts, and MVVM architecture.",
+    description: "Built an iOS app to browse, customize, and order appetizers, with a complete cart and checkout flow. Implemented SwiftUI with MVVM architecture, handling state management and data flow between views.",
     image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=800&h=400&fit=crop",
     tags: ["SwiftUI", "Learning Project"],
     status: "completed"
@@ -40,7 +40,7 @@ const projects: ProjectCard[] = [
   {
     id: "habitn-app",
     title: "Habitn",
-    description: "ADHD-focused habit tracker with Firebase backend and intelligent reminders.",
+    description: "Developed an ADHD-friendly habit tracker with streaks, daily resets, and customizable notifications. Integrated Firebase for authentication, real-time habit storage, and cloud sync.",
     image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=400&fit=crop",
     tags: ["Swift", "Firebase"],
     status: "development"
@@ -48,7 +48,7 @@ const projects: ProjectCard[] = [
   {
     id: "mind-match",
     title: "Mind Match",
-    description: "Interactive memory matching game built with React and modern web technologies.",
+    description: "Built an interactive matching game using React for web browsers. Practiced component-based architecture, state management, and game logic.",
     image: "https://images.unsplash.com/photo-1559028006-448665bd7c7f?w=800&h=400&fit=crop",
     tags: ["React", "Game"],
     status: "upcoming"
@@ -56,7 +56,7 @@ const projects: ProjectCard[] = [
   {
     id: "picky-chef",
     title: "Picky Chef",
-    description: "Recipe discovery app for picky eaters built with React Native and API integration.",
+    description: "Designed a mobile-first AI-powered meal planning app for busy families and picky eaters. Built with React Native for cross-platform compatibility and integrated AI-driven recipe suggestions.",
     image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=400&fit=crop",
     tags: ["React Native", "AI"],
     status: "upcoming"
@@ -96,7 +96,7 @@ export default function Portfolio({ onProjectClick }: PortfolioProps) {
           Featured <span className="text-neon-cyan">Projects</span>
         </h2>
         
-        <div ref={ref} className={`grid md:grid-cols-2 lg:grid-cols-3 gap-8 ${isVisible ? "fade-in-up" : "opacity-0"}`}>
+        <div ref={ref} className={`grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 ${isVisible ? "fade-in-up" : "opacity-0"}`}>
           {projects.map((project, index) => {
             const statusConfig = getStatusConfig(project.status);
             

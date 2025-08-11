@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import Services from "@/components/Services";
 import Portfolio from "@/components/Portfolio";
 import Timeline from "@/components/Timeline";
 import Contact from "@/components/Contact";
@@ -11,7 +12,16 @@ export default function Home() {
   const [selectedProject, setSelectedProject] = useState<string | null>(null);
 
   useEffect(() => {
-    document.title = "StormShift Labs - Portfolio | Innovating at the intersection of code and creativity";
+    document.title = "StormShift Labs - iOS & Web Developer | Swift, React, WordPress Services";
+    
+    // Add meta description
+    let metaDescription = document.querySelector('meta[name="description"]');
+    if (!metaDescription) {
+      metaDescription = document.createElement('meta');
+      metaDescription.setAttribute('name', 'description');
+      document.head.appendChild(metaDescription);
+    }
+    metaDescription.setAttribute('content', 'Justin Madanayake - StormShift Labs offers professional iOS app development, web development, and Firebase integration services. Specializing in Swift, SwiftUI, React, and WordPress solutions.');
   }, []);
 
   return (
@@ -19,6 +29,7 @@ export default function Home() {
       <Navigation />
       <Hero />
       <About />
+      <Services />
       <Portfolio onProjectClick={setSelectedProject} />
       <Timeline />
       <Contact />
