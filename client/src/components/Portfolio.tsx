@@ -107,14 +107,14 @@ export default function Portfolio({ onProjectClick }: PortfolioProps) {
                 onClick={() => onProjectClick(project.id)}
                 data-testid={`project-card-${project.id}`}
               >
-                <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl overflow-hidden border border-gray-700 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl">
+                <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl overflow-hidden border border-gray-700 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl h-full flex flex-col">
                   <img 
                     src={project.image} 
                     alt={project.title} 
                     className="w-full h-48 object-cover"
                     data-testid={`project-image-${project.id}`}
                   />
-                  <div className="p-6">
+                  <div className="p-6 flex flex-col flex-grow">
                     <div className="flex items-center justify-between mb-3">
                       <h3 className="text-xl font-bold text-white" data-testid={`project-title-${project.id}`}>
                         {project.title}
@@ -136,10 +136,10 @@ export default function Portfolio({ onProjectClick }: PortfolioProps) {
                         )}
                       </div>
                     </div>
-                    <p className="text-gray-400 text-sm mb-4" data-testid={`project-description-${project.id}`}>
+                    <p className="text-gray-400 text-sm mb-4 flex-grow" data-testid={`project-description-${project.id}`}>
                       {project.description}
                     </p>
-                    <div className="flex items-center justify-between">
+                    <div className="flex items-center justify-between mt-auto">
                       <span className={`text-xs font-semibold ${statusConfig.color}`} data-testid={`project-status-${project.id}`}>
                         {statusConfig.label}
                       </span>

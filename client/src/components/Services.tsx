@@ -59,7 +59,7 @@ export default function Services() {
                 className="group cursor-pointer"
                 data-testid={`service-card-${service.id}`}
               >
-                <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl p-6 border border-gray-700 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:border-neon-cyan/50">
+                <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl p-6 border border-gray-700 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:border-neon-cyan/50 h-full flex flex-col">
                   <div className={`w-16 h-16 mx-auto mb-4 bg-gradient-to-br ${service.color} p-4 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
                     <IconComponent className="text-white" size={28} />
                   </div>
@@ -68,11 +68,11 @@ export default function Services() {
                     {service.title}
                   </h3>
                   
-                  <p className="text-gray-400 text-sm mb-4 text-center leading-relaxed" data-testid={`service-description-${service.id}`}>
+                  <p className="text-gray-400 text-sm mb-4 text-center leading-relaxed flex-grow" data-testid={`service-description-${service.id}`}>
                     {service.description}
                   </p>
                   
-                  <div className="flex flex-wrap gap-2 justify-center" data-testid={`service-tech-${service.id}`}>
+                  <div className="flex flex-wrap gap-2 justify-center mt-auto" data-testid={`service-tech-${service.id}`}>
                     {service.tech.map((tech, techIndex) => (
                       <span 
                         key={techIndex}
