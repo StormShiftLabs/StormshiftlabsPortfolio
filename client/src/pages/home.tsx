@@ -21,7 +21,7 @@ export default function Home() {
       metaDescription.setAttribute('name', 'description');
       document.head.appendChild(metaDescription);
     }
-    metaDescription.setAttribute('content', 'Justin Madanayake - StormShift Labs offers professional iOS app development, web development, and Firebase integration services. Specializing in Swift, SwiftUI, React, and WordPress solutions.');
+    metaDescription.setAttribute('content', 'Justin Storm - StormShift Labs offers professional iOS app development, web development, and Firebase integration services. Specializing in Swift, SwiftUI, React, and WordPress solutions.');
   }, []);
 
   return (
@@ -38,7 +38,7 @@ export default function Home() {
       <footer className="py-8 px-4 bg-black/50 border-t border-gray-800/50">
         <div className="max-w-7xl mx-auto text-center">
           <p className="text-gray-400 text-sm">
-            © 2024 StormShift Labs. Built with passion and powered by innovation.
+            © 2025 StormShift Labs. Built with passion and powered by innovation.
           </p>
         </div>
       </footer>

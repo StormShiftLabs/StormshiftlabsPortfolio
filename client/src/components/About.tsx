@@ -24,20 +24,20 @@ export default function About() {
             </h2>
             <div className="text-gray-300 text-lg leading-relaxed space-y-6" data-testid="about-content">
               <p>
-                StormShift Labs is the work of <strong className="text-white">Justin Madanayake</strong>, 
+                StormShift Labs is the work of <strong className="text-white">Justin Storm</strong>, 
                 a self-taught developer blending creativity and technology. My journey began building 
                 my first client website — Top Speed Cincy — on WordPress.
               </p>
               <p>
                 I then dove into iOS development through Sean Allen's YouTube course, creating an 
-                Appetizer Ordering app with advanced ordering, cart, and account features. That experience 
-                set the stage for my first real self-built app, <strong className="text-neon-purple">Habitn</strong> — 
-                an ADHD-focused habit tracker built with Swift, MVVM, and Firebase.
+                Appetizer Ordering app with advanced ordering, cart, and account features. From there,
+                I shifted my focus to modern web development, learning React and building Mind Match, 
+                a web-based matching game that sharpened my skills in React, TypeScript, and component-driven design.
               </p>
               <p>
-                From there, I explored React with Mind Match, a web-based matching game, and expanded 
-                into mobile-first AI solutions with Picky Chef, a React Native app for meal planning. 
-                Every project represents a step forward — learning, experimenting, and refining my craft.
+                I'm currently expanding my expertise with Crispy Potato, an AI-powered meal planning app built with React & React Native, 
+                combining my interests in technology and practical problem-solving. Every project marks a step forward — learning, 
+                experimenting, and refining my craft.
               </p>
             </div>
           </div>

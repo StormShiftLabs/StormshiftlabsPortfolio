@@ -35,14 +35,6 @@ const timelineItems: TimelineItem[] = [
     color: "cyan"
   },
   {
-    id: "habitn",
-    title: "Habitn",
-    description: "ADHD-focused habit tracker with Firebase",
-    status: "IN DEVELOPMENT",
-    side: "right",
-    color: "purple"
-  },
-  {
     id: "mind-match",
     title: "Mind Match",
     description: "React-based memory matching game",
@@ -51,8 +43,8 @@ const timelineItems: TimelineItem[] = [
     color: "cyan"
   },
   {
-    id: "picky-chef",
-    title: "Picky Chef",
+    id: "crispy-potato",
+    title: "Crispy Potato",
     description: "React Native recipe discovery app",
     status: "UPCOMING",
     side: "right",
@@ -193,3 +185,4 @@ export default function Timeline() {
     </section>
   );
 }
+

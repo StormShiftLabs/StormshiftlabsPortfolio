@@ -33,13 +33,7 @@ const projectData: Record<string, ProjectData> = {
     status: "Completed",
     features: ["Shopping Cart", "User Accounts", "Order Management", "Modern UI/UX", "Form Validation", "API Integration"]
   },
-  "habitn-app": {
-    title: "Habitn - ADHD Habit Tracker",
-    description: "Developed an ADHD-friendly habit tracker with streaks, daily resets, and customizable notifications. Integrated Firebase for authentication, real-time habit storage, and cloud sync. Learned push notification scheduling, data modeling, and dynamic UI updates for a scalable app.",
-    tech: ["Swift", "Firebase", "SwiftUI", "MVVM"],
-    status: "In Development",
-    features: ["ADHD-Focused Design", "Smart Notifications", "Progress Analytics", "Cloud Sync", "Real-time Updates", "Push Notifications"]
-  },
+
   "mind-match": {
     title: "Mind Match",
     description: "Built an interactive matching game using React for web browsers. Practiced component-based architecture, state management, and game logic. Gained experience in responsive layout and smooth animations for better UX.",

@@ -1,5 +1,7 @@
 import { ExternalLink } from "lucide-react";
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
+import swiftUIImg from "@/assets/SwiftUI-SA.png";
+import appetizerImg from "@/assets/AppetizerApp2.png";
 
 interface ProjectCard {
   id: string;
@@ -16,16 +18,16 @@ const projects: ProjectCard[] = [
     id: "top-speed-cincy",
     title: "Top Speed Cincy",
     description: "Designed and built a professional website for a performance auto shop to showcase services, recent projects, and contact information. Used WordPress for rapid development with custom styling and structured content layout.",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=400&fit=crop",
+    image: "https://www.topspeedcincy.com/wp-content/uploads/2024/11/Logan-Working-Top-Speed-Cincy-1-2-scaled.jpg",
     tags: ["WordPress", "Client Project"],
     status: "live",
-    link: "#"
+    link: "topspeedcincy.com"
   },
   {
     id: "sean-allen-training",
     title: "Sean Allen Swift Training",
     description: "Completed a structured iOS development curriculum via Sean Allen's tutorials. Learned fundamentals of Swift, SwiftUI, MVVM architecture, API calls, and state management.",
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=400&fit=crop",
+    image: swiftUIImg,
     tags: ["Swift", "Learning"],
     status: "completed"
   },
@@ -33,17 +35,9 @@ const projects: ProjectCard[] = [
     id: "appetizer-app",
     title: "Appetizer Ordering App",
     description: "Built an iOS app to browse, customize, and order appetizers, with a complete cart and checkout flow. Implemented SwiftUI with MVVM architecture, handling state management and data flow between views.",
-    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=800&h=400&fit=crop",
+    image: appetizerImg,
     tags: ["SwiftUI", "Learning Project"],
     status: "completed"
-  },
-  {
-    id: "habitn-app",
-    title: "Habitn",
-    description: "Developed an ADHD-friendly habit tracker with streaks, daily resets, and customizable notifications. Integrated Firebase for authentication, real-time habit storage, and cloud sync.",
-    image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=400&fit=crop",
-    tags: ["Swift", "Firebase"],
-    status: "development"
   },
   {
     id: "mind-match",
