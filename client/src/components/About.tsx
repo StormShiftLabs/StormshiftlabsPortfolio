@@ -31,8 +31,14 @@ export default function About() {
               <p>
                 I then dove into iOS development through Sean Allen's YouTube course, creating an 
                 Appetizer Ordering app with advanced ordering, cart, and account features. From there,
-                I shifted my focus to modern web development, learning React and building Mind Match, 
+                I shifted my focus to modern web development, learning React and building <a href="https://mindmatch-theta.vercel.app" target="_blank" rel="noopener noreferrer" className="text-neon-cyan hover:text-neon-purple transition-colors"><strong>Mind Match</strong></a>, 
                 a web-based matching game that sharpened my skills in React, TypeScript, and component-driven design.
+              </p>
+              <p>
+                I've also built two other client websites: <strong className="text-white">RigdonFitness.com</strong> for a personal trainer, 
+                built with React & TypeScript, and <strong className="text-white">JoshlynsJourney.com</strong> for a fundraiser, 
+                created with HTML, CSS, and JavaScript. These projects showcase my ability to work with different 
+                technologies and deliver solutions tailored to client needs.
               </p>
               <p>
                 I'm currently expanding my expertise with Crispy Potato, an AI-powered meal planning app built with React & React Native, 

@@ -11,6 +11,22 @@ interface ProjectData {
 }
 
 const projectData: Record<string, ProjectData> = {
+  "rigdon-fitness": {
+    title: "Rigdon Fitness",
+    description: "Designed and built a professional website for a personal trainer to showcase services, training programs, and client testimonials. Built with React & TypeScript for modern performance and maintainability. Created a clean, motivational design that reflects the trainer's brand and helps convert visitors into clients through clear service offerings and contact information.",
+    tech: ["React", "TypeScript", "CSS3", "JavaScript"],
+    status: "Live Project",
+    link: "https://rigdonfitness.com",
+    features: ["Modern React Architecture", "TypeScript Integration", "Responsive Design", "Service Showcase", "Client Testimonials", "Contact Integration"]
+  },
+  "joshlyns-journey": {
+    title: "Joshlyn's Journey",
+    description: "Created a fundraising website to support a cause with donation functionality, story sharing, and event information. Built with HTML, CSS, and JavaScript for broad compatibility and fast loading. Designed an emotionally engaging interface that effectively communicates the story and encourages donations through clear calls-to-action and progress tracking.",
+    tech: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
+    status: "Live Project",
+    link: "https://joshlynsjourney.com",
+    features: ["Donation System", "Story Sharing", "Event Information", "Progress Tracking", "Mobile Optimized", "Fast Loading"]
+  },
   "top-speed-cincy": {
     title: "Top Speed Cincy",
     description: "Designed and built a professional website for a performance auto shop to showcase services, recent projects, and contact information. Used WordPress for rapid development with custom styling and structured content layout. Helped establish a stronger online presence and build customer trust for the business.",
@@ -36,9 +52,10 @@ const projectData: Record<string, ProjectData> = {
 
   "mind-match": {
     title: "Mind Match",
-    description: "Built an interactive matching game using React for web browsers. Practiced component-based architecture, state management, and game logic. Gained experience in responsive layout and smooth animations for better UX.",
+    description: "Built an interactive mood matching journal using React for web browsers. Practiced component-based architecture, state management, and JS logic.",
     tech: ["React", "JavaScript", "CSS3"],
-    status: "Coming Soon",
+    status: "Live Project",
+    link: "https://mindmatch-theta.vercel.app",
     features: ["Multiple Difficulty Levels", "Score Tracking", "Smooth Animations", "Responsive Design", "Component Architecture"]
   },
   "picky-chef": {

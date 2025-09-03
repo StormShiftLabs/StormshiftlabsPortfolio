@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Mail, Github, Linkedin, Twitter, Send } from "lucide-react";
+import { Mail, Github, Twitter, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -143,7 +143,7 @@ export default function Contact() {
             <Mail size={32} className="group-hover:scale-110 transition-transform" />
           </a>
           <a 
-            href="https://github.com/justinmadanayake" 
+            href="https://github.com/stormshiftlabs" 
             className="text-neon-cyan hover:text-white transition-colors duration-300 group"
             target="_blank"
             rel="noopener noreferrer"
@@ -151,17 +151,9 @@ export default function Contact() {
           >
             <Github size={32} className="group-hover:scale-110 transition-transform" />
           </a>
+
           <a 
-            href="https://linkedin.com/in/justinmadanayake" 
-            className="text-neon-cyan hover:text-white transition-colors duration-300 group"
-            target="_blank"
-            rel="noopener noreferrer"
-            data-testid="link-linkedin"
-          >
-            <Linkedin size={32} className="group-hover:scale-110 transition-transform" />
-          </a>
-          <a 
-            href="https://twitter.com/justinmadanayake" 
+            href="https://twitter.com/stormshiftlabs" 
             className="text-neon-cyan hover:text-white transition-colors duration-300 group"
             target="_blank"
             rel="noopener noreferrer"

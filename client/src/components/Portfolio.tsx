@@ -2,6 +2,8 @@ import { ExternalLink } from "lucide-react";
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
 import swiftUIImg from "@/assets/SwiftUI-SA.png";
 import appetizerImg from "@/assets/AppetizerApp2.png";
+import mindMatchImg from "@/assets/mindmatch-portfolio.jpg";
+import rigdonFitnessImg from "@/assets/Rigdon Fitness Photo-3.jpg";
 
 interface ProjectCard {
   id: string;
@@ -14,6 +16,24 @@ interface ProjectCard {
 }
 
 const projects: ProjectCard[] = [
+  {
+    id: "rigdon-fitness",
+    title: "Rigdon Fitness",
+    description: "Designed and built a professional website for a personal trainer to showcase services, training programs, and client testimonials. Built with React & TypeScript for modern performance and maintainability.",
+    image: rigdonFitnessImg,
+    tags: ["React", "TypeScript"],
+    status: "live",
+    link: "rigdonfitness.com"
+  },
+  {
+    id: "joshlyns-journey",
+    title: "Joshlyn's Journey",
+    description: "Created a fundraising website to support a cause with donation functionality, story sharing, and event information. Built with HTML, CSS, and JavaScript for broad compatibility and fast loading.",
+    image: "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=800&h=400&fit=crop",
+    tags: ["HTML", "CSS", "JavaScript"],
+    status: "live",
+    link: "joshlynsjourney.com"
+  },
   {
     id: "top-speed-cincy",
     title: "Top Speed Cincy",
@@ -42,10 +62,11 @@ const projects: ProjectCard[] = [
   {
     id: "mind-match",
     title: "Mind Match",
-    description: "Built an interactive matching game using React for web browsers. Practiced component-based architecture, state management, and game logic.",
-    image: "https://images.unsplash.com/photo-1559028006-448665bd7c7f?w=800&h=400&fit=crop",
-    tags: ["React", "Game"],
-    status: "upcoming"
+    description: "Built an interactive mood matching journal using React for web browsers. Practiced component-based architecture, state management, and JS logic.",
+    image: mindMatchImg,
+    tags: ["React", "Web-App"],
+    status: "live",
+    link: "mindmatch-theta.vercel.app"
   },
   {
     id: "picky-chef",
